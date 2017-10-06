@@ -139,7 +139,6 @@ class Login extends Component {
         this.setState({key:key})
     }
     render() {
-        console.log(this.state.env);
         const arrayies = this.state.env;
         const environmentLength = this.state.env.length;
 
@@ -153,7 +152,7 @@ class Login extends Component {
                     SnackbarContentProps={{
                         'aria-describedby': 'message-id',
                     }}
-                    message={<span id="message-id">{this.state.message}</span>}
+                    message={<span id="message-id"></span>}
                 />
                 <div className="login-main-content">
                     <Paper className="login-paper">
