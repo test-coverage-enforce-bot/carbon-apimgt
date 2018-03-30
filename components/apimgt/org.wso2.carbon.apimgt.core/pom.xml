@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!--
   ~ /*
   ~ *  Copyright (c) 2016, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
@@ -17,9 +17,7 @@
   ~ * specific language governing permissions and limitations
   ~ * under the License.
   ~ *
-  -->
-
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  --><project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <parent>
         <artifactId>apimgt</artifactId>
@@ -250,7 +248,8 @@
         </dependency>
         <dependency>
             <groupId>org.wso2.orbit.com.squareup.okhttp</groupId>
-            <artifactId>logging-interceptor</artifactId></dependency>
+            <artifactId>logging-interceptor</artifactId>
+    </dependency>
         <dependency>
             <groupId>org.wso2.orbit.io.fabric8</groupId>
             <artifactId>kubernetes-client</artifactId>
@@ -521,7 +520,7 @@
                                             </tcp>
                                             <time>60000</time>
                                         </wait>
-                                        <cmd />
+                                        <cmd/>
                                     </run>
                                 </image>
                             </images>
